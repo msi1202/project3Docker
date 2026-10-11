@@ -1,0 +1,10 @@
+# Keep the build context (and the image) small
+*.tar
+output/
+deployment.yaml
+kube_output.txt
+result.txt
+__pycache__/
+*.pyc
+.git/
+.DS_Store

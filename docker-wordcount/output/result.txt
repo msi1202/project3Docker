@@ -1,0 +1,33 @@
+========================================================
+            DOCKER WORD COUNT PROJECT - RESULTS
+========================================================
+Run at (UTC): 2026-10-11 03:00:45
+Data folder:  /home/data
+
+a) Total words in each file
+  IF.txt                         295
+  AlwaysRememberUsThisWay.txt    223
+
+b) Grand total of words (both files)
+  518
+
+c) Top 3 most frequent words in IF.txt
+  1. and          20
+  2. you          18
+  3. if           14
+
+d) Top 3 most frequent words in AlwaysRememberUsThisWay.txt
+   (after splitting contractions, e.g. I'm -> I am, can't -> can not)
+  1. i            15
+  2. the          13
+  3. not          9
+  Contractions found and split: 9 distinct
+  (can't, couldn't, don't, i'll, i'm, it's, that's, won't, you're)
+  Word count with contractions split: 242
+
+e) IP address of the machine running this container
+  Container IP:  172.17.0.2
+  Host IP:       192.168.65.254
+
+f) Results written to /home/data/output/result.txt
+========================================================

@@ -1,0 +1,29 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: wordcount
+  labels:
+    app: wordcount
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: wordcount
+  template:
+    metadata:
+      labels:
+        app: wordcount
+    spec:
+      containers:
+        - name: wordcount
+          image: msi1202:latest
+          imagePullPolicy: Never
+          command: ["sh", "-c", "python /home/data/scripts.py && tail -f /dev/null"]
+          resources:
+            requests:
+              cpu: "50m"
+              memory: "32Mi"
+            limits:
+              cpu: "200m"
+              memory: "128Mi"
